@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Equips - Shop nu</title>
+    <meta name="description" content="Ontdek stijlvolle mode, beauty en auto-accessoires bij Royal Equips. Betaalbaar, trendy en exclusief voor jou.">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        main {
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Royal Equips</h1>
+        <p>Crowned in Elegance - Voor stijl, luxe en scherpe prijzen.</p>
+    </header>
+    <main>
+        <div id='collection-component-1742870479641'></div>
+    </main>
+    <script type="text/javascript">
+        
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'ge1vev-8k.myshopify.com',
+      storefrontAccessToken: 'f65609728ab016bcbdf0e0e446d1ed1e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '638696259914',
+        node: document.getElementById('collection-component-1742870479641'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {/* trimmed for clarity */}
+      });
+    });
+  }
+})();
+/*]]>*/
+
+    </script>
+</body>
+</html>
